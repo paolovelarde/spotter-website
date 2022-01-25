@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../src/fonts/Jost-Regular.ttf';
+import '../src/fonts/Jost-Bold.ttf';
+import '../src/fonts/Jost-Medium.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
