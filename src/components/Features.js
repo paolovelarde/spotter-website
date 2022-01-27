@@ -2,6 +2,8 @@ import React, { Component, useState } from 'react';
 import styled from 'styled-components';
 import CheckPointImg from '../assets/img/check-point.png';
 import FeaturesImg from '../assets/img/features-graphic.png';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const featuresList = [
   'Feature1',
@@ -17,6 +19,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1920px;
   background-color: #fff;
+  overflow: hidden;
   @media (max-width: 1600px){
     height: 720px;
   }
@@ -31,6 +34,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   display: flex;
   flex: 1;
+  justify-content: space-between;
   align-items: center;
   padding: 0 0 0 192px;
   @media (max-width: 1280px){
@@ -66,7 +70,7 @@ const Title = styled.h1`
     font-size: 36px;
   }
   @media (max-width: 1080px){
-    font-size: 30px;
+    font-size: 34px;
     margin: 0 0 16px 0;
   }
   @media (max-width: 440px){
@@ -151,6 +155,13 @@ const FeatureMobileDiv = styled.div`
   }
 `;
 
+const TitleSlide = styled.div`
+
+`;
+
+const FeatureSlide = styled(TitleSlide)`
+`;
+
 function Features() {
 
   const [features, setFeature] = useState(featuresList);
@@ -158,30 +169,34 @@ function Features() {
   return (
     <Wrapper>
       <Content>
-        <TitleContainer>
-          <Title>Features include:</Title>
-          <FeatureList>
-            <FeatureItem>
-              <CheckPoint src={CheckPointImg} />
-              <FeatureText>Free and custom workout routines</FeatureText>
-            </FeatureItem>
-            <FeatureItem>
-              <CheckPoint src={CheckPointImg} />
-              <FeatureText>Calorie counter</FeatureText>
-            </FeatureItem>
-            <FeatureItem>
-              <CheckPoint src={CheckPointImg} />
-              <FeatureText>Cardio tracking</FeatureText>
-            </FeatureItem>
-            <FeatureItem>
-              <CheckPoint src={CheckPointImg} />
-              <FeatureText>Exercise stats and more</FeatureText>
-            </FeatureItem>
-          </FeatureList>
-        </TitleContainer>
-        <FeatureMobileDiv>
-          <FeaturesGraphicImg src={FeaturesImg} />
-        </FeatureMobileDiv>
+        <Slide left>
+          <TitleContainer>
+            <Title>Features include:</Title>
+            <FeatureList>
+              <FeatureItem>
+                <CheckPoint src={CheckPointImg} />
+                <FeatureText>Free and custom workout routines</FeatureText>
+              </FeatureItem>
+              <FeatureItem>
+                <CheckPoint src={CheckPointImg} />
+                <FeatureText>Calorie counter</FeatureText>
+              </FeatureItem>
+              <FeatureItem>
+                <CheckPoint src={CheckPointImg} />
+                <FeatureText>Cardio tracking</FeatureText>
+              </FeatureItem>
+              <FeatureItem>
+                <CheckPoint src={CheckPointImg} />
+                <FeatureText>Exercise stats and more</FeatureText>
+              </FeatureItem>
+            </FeatureList>
+          </TitleContainer>
+        </Slide>
+        <Slide right>
+          <FeatureMobileDiv>
+            <FeaturesGraphicImg src={FeaturesImg} />
+          </FeatureMobileDiv>
+        </Slide>
       </Content>
     </Wrapper>
   );

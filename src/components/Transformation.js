@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import DesktopSpreadsheet from '../assets/img/desktop-spreadsheet.png';
 import iPhoneWorkout from '../assets/img/iphone-workout.png';
 import AndroidBodyweight from '../assets/img/android-bodyweight.png';
+import Fade from 'react-reveal/Fade';
 
 const Wrapper = styled.div`
   display: flex;
@@ -168,19 +169,21 @@ const AndroidBodyweightImg = styled.img`
 function Transformation() {
   return (
     <Wrapper>
-      <Content>
-        <SpreadsheetContainer>
-          <DesktopSpreadsheetImg src={DesktopSpreadsheet} />
-          <Subtitle>Spotter takes multiple formulas, numbers, tables of data...</Subtitle>
-        </SpreadsheetContainer>
-        <PhonesContainer>
-          <PhonesImgDiv>
-            <AndroidBodyweightImg src={AndroidBodyweight} />
-            <IPhoneWorkoutImg src={iPhoneWorkout} />
-          </PhonesImgDiv>
-          <Subtitle>... and turns them into simple graphs and components.</Subtitle>
-        </PhonesContainer>
-      </Content>
+      <Fade>
+        <Content>
+          <SpreadsheetContainer>
+            <DesktopSpreadsheetImg src={DesktopSpreadsheet} />
+            <Subtitle>Spotter takes multiple formulas, numbers, tables of data...</Subtitle>
+          </SpreadsheetContainer>
+          <PhonesContainer>
+            <PhonesImgDiv>
+              <AndroidBodyweightImg src={AndroidBodyweight} />
+              <IPhoneWorkoutImg src={iPhoneWorkout} />
+            </PhonesImgDiv>
+            <Subtitle>... and turns them into simple graphs and components.</Subtitle>
+          </PhonesContainer>
+        </Content>
+      </Fade>
     </Wrapper>
   );
 }

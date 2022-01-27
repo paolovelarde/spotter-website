@@ -5,6 +5,13 @@ import PhoneBackground from '../assets/img/phone-bg.png';
 import PhoneBackgroundMobile from '../assets/img/phone-bg-mobile.png';
 import PhoneBackgroundSmall from '../assets/img/phone-bg-small.png';
 import ReactTooltip from 'react-tooltip';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
+const FadeWrapper = styled.div`
+  width: 100%;
+  background-color: #eaecf1;
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -105,7 +112,7 @@ const Title = styled.h1`
     margin: 0 0 32px 0;
   }
   @media (max-width: 440px){
-    font-size: 36px;
+    font-size: 42px;
     line-height: 1em;
     letter-spacing: -1.5px;
   }
@@ -137,22 +144,29 @@ const DownloadButton = styled.div`
 
 function Home() {
   return (
-    <Wrapper>
-      <Content>
-        <LogoDiv>
-          <Logo src={SpotterLogo} />
-        </LogoDiv>
-        <TitleContainer>
-          <Title>Fitness <br />made simple</Title>
-          {/* <DownloadButton>Download</DownloadButton> */}
-          <DownloadButton href='/' data-tip data-for='download' data-place='bottom' data-type='light'>Download</DownloadButton>
-          <ReactTooltip id='download' type='warning' effect='solid'>
-            <Subtitle>Coming soon!</Subtitle>
-          </ReactTooltip>
-          {/* <Subtitle>Available for Android and iOS</Subtitle> */}
-        </TitleContainer>
-      </Content>
-    </Wrapper>
+    <FadeWrapper>
+      <Fade>
+        <Wrapper>
+          <Content>
+            <LogoDiv>
+              <Fade>
+                <Logo src={SpotterLogo} />
+              </Fade>
+            </LogoDiv>
+            <TitleContainer>
+              <Slide left>
+                <Title>Fitness <br />made simple</Title>
+                <DownloadButton data-tip data-for='download' data-place='bottom' data-type='light'>Download</DownloadButton>
+                <ReactTooltip id='download' type='warning' effect='solid'>
+                  <Subtitle>Coming soon!</Subtitle>
+                </ReactTooltip>
+              </Slide>
+              {/* <Subtitle>Available for Android and iOS</Subtitle> */}
+            </TitleContainer>
+          </Content>
+        </Wrapper>
+      </Fade>
+    </FadeWrapper>
   );
 }
 

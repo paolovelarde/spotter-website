@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import FuchsiaGradient from '../assets/img/fuchsia-gradient.jpg';
 import { Parallax } from 'react-parallax';
+import Fade from 'react-reveal/Fade';
 
 const styles = {
   parallax: {
@@ -44,7 +45,9 @@ function WhySpotter() {
   return (
     <Parallax bgImage={FuchsiaGradient} strength={200} style={styles.parallax}>
       <Content>
-        <Title>Why Spotter?</Title>
+        <Fade>
+          <Title>Why Spotter?</Title>
+        </Fade>
       </Content>
     </Parallax>
   );
