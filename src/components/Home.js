@@ -123,8 +123,11 @@ const Subtitle = styled.p`
   font-size: 20px;
   color: rgba(17,17,17,0.85);
   margin: 0;
+  width: 120px;
+  text-align: center;
   @media (max-width: 440px){
     font-size: 16px;
+    width: 96px;
   }
 `;
 
