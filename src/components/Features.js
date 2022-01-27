@@ -1,16 +1,8 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import CheckPointImg from '../assets/img/check-point.png';
 import FeaturesImg from '../assets/img/features-graphic.png';
-import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-
-const featuresList = [
-  'Feature1',
-  'Feature2',
-  'Feature3',
-  'Feature4'
-];
 
 const Wrapper = styled.div`
   display: flex;
@@ -155,16 +147,7 @@ const FeatureMobileDiv = styled.div`
   }
 `;
 
-const TitleSlide = styled.div`
-
-`;
-
-const FeatureSlide = styled(TitleSlide)`
-`;
-
 function Features() {
-
-  const [features, setFeature] = useState(featuresList);
 
   return (
     <Wrapper>

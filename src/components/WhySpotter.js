@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import FuchsiaGradient from '../assets/img/fuchsia-gradient.jpg';
 import { Parallax } from 'react-parallax';

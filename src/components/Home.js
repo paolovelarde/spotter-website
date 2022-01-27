@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import SpotterLogo from '../assets/img/spotter-logo.png';
 import PhoneBackground from '../assets/img/phone-bg.png';
@@ -11,6 +11,7 @@ import Slide from 'react-reveal/Slide';
 const FadeWrapper = styled.div`
   width: 100%;
   background-color: #eaecf1;
+  max-width: 1920px;
 `;
 
 const Wrapper = styled.div`
@@ -164,7 +165,6 @@ function Home() {
                   <Subtitle>Coming soon!</Subtitle>
                 </ReactTooltip>
               </Slide>
-              {/* <Subtitle>Available for Android and iOS</Subtitle> */}
             </TitleContainer>
           </Content>
         </Wrapper>

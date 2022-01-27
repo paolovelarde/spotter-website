@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import DesktopSpreadsheet from '../assets/img/desktop-spreadsheet.png';
 import iPhoneWorkout from '../assets/img/iphone-workout.png';
@@ -33,19 +33,6 @@ const Content = styled.div`
   }
   @media (max-width: 440px){
     margin: 64px 0;
-  }
-`;
-
-const Title = styled.h1`
-  font-family: JostBold;
-  font-size: 72px;
-  color: #fff;
-  line-height: 1.25em;
-  margin: 0;
-  @media (max-width: 440px){
-    font-size: 48px;
-    line-height: 1em;
-    letter-spacing: -1.5px;
   }
 `;
 

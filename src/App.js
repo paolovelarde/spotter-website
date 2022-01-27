@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Home from './components/Home';
 import Features from './components/Features';
 import WhySpotter from './components/WhySpotter';
