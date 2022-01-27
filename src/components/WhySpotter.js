@@ -19,7 +19,7 @@ const Content = styled.div`
     height: 360px;
   }
   @media (max-width: 1080px){
-    height: 320px;
+    height: 240px;
   }
 `;
 

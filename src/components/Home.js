@@ -4,6 +4,7 @@ import SpotterLogo from '../assets/img/spotter-logo.png';
 import PhoneBackground from '../assets/img/phone-bg.png';
 import PhoneBackgroundMobile from '../assets/img/phone-bg-mobile.png';
 import PhoneBackgroundSmall from '../assets/img/phone-bg-small.png';
+import ReactTooltip from 'react-tooltip';
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,6 +41,10 @@ const Wrapper = styled.div`
   }
 `;
 
+const LogoDiv = styled.div`
+  width: 100%
+`;
+
 const Logo = styled.img`
   height: 24px;
   width: auto;
@@ -50,11 +55,11 @@ const Logo = styled.img`
     height: 20px;
   }
   @media (max-width: 768px){
-    height: 16px;
-    width: 68.6857px;
+    height: 20px;
+    width: auto;
     position: static;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 108px;
   }
 `;
 
@@ -100,7 +105,6 @@ const Title = styled.h1`
     margin: 0 0 32px 0;
   }
   @media (max-width: 440px){
-    margin: 0 0 16px 0;
     font-size: 36px;
     line-height: 1em;
     letter-spacing: -1.5px;
@@ -117,14 +121,35 @@ const Subtitle = styled.p`
   }
 `;
 
+const DownloadButton = styled.div`
+  font-family: JostMedium;
+  font-size: 20px;
+  color: #fff;
+  background-color: #101010;
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  @media (max-width: 1080px){
+    font-size: 16px;
+  }
+`;
+
 function Home() {
   return (
     <Wrapper>
       <Content>
-        <Logo src={SpotterLogo} />
+        <LogoDiv>
+          <Logo src={SpotterLogo} />
+        </LogoDiv>
         <TitleContainer>
           <Title>Fitness <br />made simple</Title>
-          <Subtitle>Available for Android and iOS</Subtitle>
+          {/* <DownloadButton>Download</DownloadButton> */}
+          <DownloadButton href='/' data-tip data-for='download' data-place='bottom' data-type='light'>Download</DownloadButton>
+          <ReactTooltip id='download' type='warning' effect='solid'>
+            <Subtitle>Coming soon!</Subtitle>
+          </ReactTooltip>
+          {/* <Subtitle>Available for Android and iOS</Subtitle> */}
         </TitleContainer>
       </Content>
     </Wrapper>
