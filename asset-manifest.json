@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.97d5bb25.css",
-    "main.js": "/static/js/main.655b8628.js",
+    "main.js": "/static/js/main.78bb04bf.js",
     "static/js/787.ad86e8cd.chunk.js": "/static/js/787.ad86e8cd.chunk.js",
     "static/media/fuchsia-gradient.jpg": "/static/media/fuchsia-gradient.da60a72de55437148f50.jpg",
     "static/media/phone-bg-small.png": "/static/media/phone-bg-small.88adc7c48f7171890360.png",
@@ -17,11 +17,11 @@
     "static/media/Jost-Regular.ttf": "/static/media/Jost-Regular.90325a9c9305cfd88e1e.ttf",
     "index.html": "/index.html",
     "main.97d5bb25.css.map": "/static/css/main.97d5bb25.css.map",
-    "main.655b8628.js.map": "/static/js/main.655b8628.js.map",
+    "main.78bb04bf.js.map": "/static/js/main.78bb04bf.js.map",
     "787.ad86e8cd.chunk.js.map": "/static/js/787.ad86e8cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97d5bb25.css",
-    "static/js/main.655b8628.js"
+    "static/js/main.78bb04bf.js"
   ]
 }
