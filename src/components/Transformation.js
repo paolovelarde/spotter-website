@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import DesktopSpreadsheet from '../assets/img/desktop-spreadsheet.png';
-import iPhoneWorkout from '../assets/img/iphone-workout.png';
-import AndroidBodyweight from '../assets/img/android-bodyweight.png';
+import PhonesGraphic from '../assets/img/phones-graphic.png';
 import Fade from 'react-reveal/Fade';
 
 const Wrapper = styled.div`
@@ -73,30 +72,8 @@ const PhonesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
-  @media (max-width: 1280px){
-    margin-right: 16px;
-  }
-  @media (max-width: 1080px){
-    margin: 0 16px 0 0;
-  }
   @media (max-width: 440px){
     margin: 80px 0 0 0;
-  }
-`;
-
-const PhonesImgDiv = styled.div`
-  display: flex;
-  align-items: flex-end;
-  margin: 0 0 64px 10%;
-  @media (max-width: 1600px){
-    margin: 0 0 32px 80px;
-  }
-  @media (max-width: 1080px){
-    margin-bottom: 32px;
-  }
-  @media (max-width: 440px){
-    margin: 0 0 32px 0;
-    padding: 0 0 0 32px;
   }
 `;
 
@@ -124,32 +101,21 @@ const DesktopSpreadsheetImg = styled.img`
   }
 `;
 
-const IPhoneWorkoutImg = styled.img`
-  height: 500px;
-  width: auto;
-  margin: 0 0 64px 0;
-  position: relative;
-  left: -10%;
+const PhonesGraphicImg = styled.img`
+  width: 480px;
+  height: auto;
+  margin: 63.75px 0 64px 0;
   @media (max-width: 1600px){
-    width: 200px;
-    height: auto;
+    width: 360px;
+    margin: 80px 0 32px 0;
   }
-  @media (max-width: 1080px){
-    width: 172.5px;
-    height: auto;
+  @media (max-width: 768px){
+    width: 70%;
   }
-`;
-
-const AndroidBodyweightImg = styled.img`
-  height: 500px;
-  width: auto;
-  @media (max-width: 1600px){
-    width: 200px;
+  @media (max-width: 440px){
+    width: 300px;
     height: auto;
-  }
-  @media (max-width: 1080px){
-    width: 172.5px;
-    height: auto;
+    margin: 0 0 32px 0;
   }
 `;
 
@@ -163,10 +129,7 @@ function Transformation() {
             <Subtitle>Spotter takes multiple formulas, numbers, tables of data...</Subtitle>
           </SpreadsheetContainer>
           <PhonesContainer>
-            <PhonesImgDiv>
-              <AndroidBodyweightImg src={AndroidBodyweight} />
-              <IPhoneWorkoutImg src={iPhoneWorkout} />
-            </PhonesImgDiv>
+            <PhonesGraphicImg src={PhonesGraphic} />
             <Subtitle>... and turns them into simple graphs and components.</Subtitle>
           </PhonesContainer>
         </Content>
