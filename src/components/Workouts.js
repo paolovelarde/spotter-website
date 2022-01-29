@@ -67,6 +67,8 @@ const Title = styled.h1`
     margin: 0 0 16px 0;
   }
   @media (max-width: 440px){
+    max-width: 320px;
+    line-height: 1.25em;
     margin: 0 0 16px 0;
     letter-spacing: -1.5px;
   }
@@ -109,7 +111,7 @@ const FeaturesGraphicImg = styled.img`
     margin: 0;
     width: 75%;
     height: auto;
-    padding: 64px 0 0 0;
+    padding: 32px 0 0 0;
   }
   @media (max-width: 440px){
     width: 90%;

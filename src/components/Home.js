@@ -11,7 +11,7 @@ import Slide from 'react-reveal/Slide';
 const FadeWrapper = styled.div`
   width: 100%;
   background-color: #eaecf1;
-  max-width: 1920px;
+  max-width: 2000px;
 `;
 
 const Wrapper = styled.div`
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   max-width: 1920px;
   background-image: url(${PhoneBackground});
   background-position: left;
-  background-size: 2160px auto;
+  background-size: 1920px auto;
   @media (max-width: 1600px){
     background-size: cover;
     height: 720px;

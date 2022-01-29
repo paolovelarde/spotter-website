@@ -32,10 +32,17 @@ const Content = styled.div`
   @media (max-width: 1080px){
     padding: 0 0 0 64px;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const ContentMobile = styled.div`
+  display: none;
   @media (max-width: 768px){
-    padding: 64px 16px;
-    align-items: flex-start;
+    display: flex;
     flex-direction: column;
+    padding-top: 64px;
   }
 `;
 
@@ -58,6 +65,7 @@ const TitleContainer = styled.div`
   }
   @media (max-width: 440px){
     justify-content: flex-start;
+    margin-bottom: 32px;
   }
 `;
 
@@ -78,6 +86,7 @@ const Title = styled.h1`
   }
   @media (max-width: 440px){
     margin: 0 0 16px 0;
+    line-height: 1.25em;
     letter-spacing: -1.5px;
   }
 `;
@@ -155,6 +164,20 @@ function CustomWorkout() {
           </TitleContainer>
         </Slide>
       </Content>
+      <ContentMobile>
+        <Slide right>
+          <TitleContainer>
+            <Title>Create your own workout routine</Title>
+            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
+            <FeatureText>Share your own personalized workout routine with your friends.</FeatureText>
+          </TitleContainer>
+        </Slide>
+        <Slide left>
+          <FeatureMobileDiv>
+            <FeaturesGraphicImg src={CustomWorkoutImg} />
+          </FeatureMobileDiv>
+        </Slide>
+      </ContentMobile>
     </Wrapper>
   );
 }

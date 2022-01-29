@@ -73,7 +73,7 @@ const PhonesContainer = styled.div`
   align-items: center;
   flex: 1;
   @media (max-width: 440px){
-    margin: 80px 0 0 0;
+    margin: 64px 0 0 0;
   }
 `;
 
