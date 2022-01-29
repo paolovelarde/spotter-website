@@ -11,7 +11,7 @@ import Slide from 'react-reveal/Slide';
 const FadeWrapper = styled.div`
   width: 100%;
   background-color: #eaecf1;
-  max-width: 2000px;
+  max-width: 1920px;
 `;
 
 const Wrapper = styled.div`
