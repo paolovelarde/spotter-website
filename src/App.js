@@ -2,7 +2,9 @@ import React from 'react';
 import Home from './components/Home';
 import Features from './components/Features';
 import WhySpotter from './components/WhySpotter';
-import Transformtion from './components/Transformation';
+import Transformation from './components/Transformation';
+import Workouts from './components/Workouts';
+import CustomWorkout from './components/CustomWorkout';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -18,7 +20,9 @@ function App() {
       <Home />
       <Features />
       <WhySpotter />
-      <Transformtion />
+      <Transformation />
+      <Workouts />
+      <CustomWorkout />
     </Wrapper>
   );
 }
