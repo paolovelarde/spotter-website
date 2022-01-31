@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.97d5bb25.css",
-    "main.js": "/static/js/main.55f0f065.js",
+    "main.js": "/static/js/main.65c8b42b.js",
     "static/js/787.ad86e8cd.chunk.js": "/static/js/787.ad86e8cd.chunk.js",
     "static/media/fuchsia-gradient.jpg": "/static/media/fuchsia-gradient.da60a72de55437148f50.jpg",
     "static/media/phone-bg-small.png": "/static/media/phone-bg-small.88adc7c48f7171890360.png",
@@ -9,19 +9,20 @@
     "static/media/phone-bg.png": "/static/media/phone-bg.68a283cfec3c2dd4b5b9.png",
     "static/media/phones-graphic.png": "/static/media/phones-graphic.d64b323dc8334aa79d71.png",
     "static/media/desktop-spreadsheet.png": "/static/media/desktop-spreadsheet.98eba288ea7b58167151.png",
-    "static/media/workouts-graphic.png": "/static/media/workouts-graphic.4cb60d22c84d65823252.png",
+    "static/media/workouts-graphic.png": "/static/media/workouts-graphic.e9a555d412a5f93540a0.png",
     "static/media/custom-workouts-screen.png": "/static/media/custom-workouts-screen.bcd770ccc6f7c09a8de4.png",
+    "static/media/cardio-graphic.png": "/static/media/cardio-graphic.bb14492c45092a88f816.png",
     "static/media/features-graphic.png": "/static/media/features-graphic.c72549cf95dce5041cf8.png",
     "static/media/Jost-Medium.ttf": "/static/media/Jost-Medium.4871b84798625e3f7db7.ttf",
     "static/media/Jost-Bold.ttf": "/static/media/Jost-Bold.c8125384f188025357b1.ttf",
     "static/media/Jost-Regular.ttf": "/static/media/Jost-Regular.90325a9c9305cfd88e1e.ttf",
     "index.html": "/index.html",
     "main.97d5bb25.css.map": "/static/css/main.97d5bb25.css.map",
-    "main.55f0f065.js.map": "/static/js/main.55f0f065.js.map",
+    "main.65c8b42b.js.map": "/static/js/main.65c8b42b.js.map",
     "787.ad86e8cd.chunk.js.map": "/static/js/787.ad86e8cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97d5bb25.css",
-    "static/js/main.55f0f065.js"
+    "static/js/main.65c8b42b.js"
   ]
 }
