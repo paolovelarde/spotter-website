@@ -92,7 +92,7 @@ const DesktopSpreadsheetImg = styled.img`
     margin: 0 0 32px 0;
   }
   @media (max-width: 768px){
-    width: 75%;
+    width: 360px;
   }
   @media (max-width: 440px){
     width: 300px;
@@ -107,10 +107,10 @@ const PhonesGraphicImg = styled.img`
   margin: 63.75px 0 64px 0;
   @media (max-width: 1600px){
     width: 360px;
-    margin: 80px 0 32px 0;
+    margin: 0 0 32px 0;
   }
   @media (max-width: 768px){
-    width: 70%;
+    width: 360px;
   }
   @media (max-width: 440px){
     width: 300px;

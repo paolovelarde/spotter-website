@@ -101,7 +101,7 @@ const FeaturesGraphicImg = styled.img`
   @media (max-width: 1080px){
     height: auto;
     width: 400px;
-    margin: 0 32px 0 0;
+    margin: 0 64px 0 0;
   }
   @media (max-width: 900px){
     height: auto;

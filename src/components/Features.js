@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import CheckPointImg from '../assets/img/check-point.png';
+import CheckPointRed from '../assets/img/check-point-red.png';
+import CheckPointGreen from '../assets/img/check-point-green.png';
+import CheckPointViolet from '../assets/img/check-point-violet.png';
+import CheckPointDark from '../assets/img/check-point-dark.png';
 import FeaturesImg from '../assets/img/features-graphic.png';
 import Slide from 'react-reveal/Slide';
 
@@ -157,19 +161,19 @@ function Features() {
             <Title>Features include:</Title>
             <FeatureList>
               <FeatureItem>
-                <CheckPoint src={CheckPointImg} />
+                <CheckPoint src={CheckPointDark} />
                 <FeatureText>Free and custom workout routines</FeatureText>
               </FeatureItem>
               <FeatureItem>
-                <CheckPoint src={CheckPointImg} />
+                <CheckPoint src={CheckPointDark} />
                 <FeatureText>Calorie counter</FeatureText>
               </FeatureItem>
               <FeatureItem>
-                <CheckPoint src={CheckPointImg} />
+                <CheckPoint src={CheckPointDark} />
                 <FeatureText>Cardio tracking</FeatureText>
               </FeatureItem>
               <FeatureItem>
-                <CheckPoint src={CheckPointImg} />
+                <CheckPoint src={CheckPointDark} />
                 <FeatureText>Exercise stats and more</FeatureText>
               </FeatureItem>
             </FeatureList>

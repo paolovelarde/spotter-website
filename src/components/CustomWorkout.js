@@ -52,7 +52,7 @@ const TitleContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  margin-right: 192px;
+  margin-right: 256px;
   @media (max-width: 1920px){
     margin: 0 128px;
   }
@@ -112,7 +112,7 @@ const FeatureText = styled.p`
 
 const FeaturesGraphicImg = styled.img`
   height: auto;
-  width: 720px;
+  width: 700px;
   @media (max-width: 1600px){
     height: auto;
     width: 640px;
@@ -158,7 +158,7 @@ function CustomWorkout() {
         </Slide>
         <Slide right>
           <TitleContainer>
-            <Title>Create your own workout routine</Title>
+            <Title>Create your own <br /> workout routine</Title>
             <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
             <FeatureText>Share your own personalized workout routine with your friends.</FeatureText>
           </TitleContainer>
