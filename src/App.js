@@ -5,6 +5,7 @@ import WhySpotter from './components/WhySpotter';
 import Transformation from './components/Transformation';
 import Workouts from './components/Workouts';
 import CustomWorkout from './components/CustomWorkout';
+import Cardio from './components/Cardio';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -23,6 +24,7 @@ function App() {
       <Transformation />
       <Workouts />
       <CustomWorkout />
+      <Cardio />
     </Wrapper>
   );
 }

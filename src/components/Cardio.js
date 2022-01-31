@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomWorkoutImg from '../assets/img/custom-workouts-screen.png';
+import CardioImg from '../assets/img/cardio-graphic.png';
 import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   height: auto;
   width: 100%;
   max-width: 1920px;
-  background-color: #fcfcfc;
+  background-color: #fff;
   overflow: hidden;
   padding: 128px 0;
   @media (max-width: 1600px){
@@ -28,21 +28,17 @@ const Content = styled.div`
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 128px;
+  padding: 0 0 0 192px;
+  @media (max-width: 1280px){
+    padding: 0 0 0 128px;
+  }
   @media (max-width: 1080px){
     padding: 0 0 0 64px;
   }
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const ContentMobile = styled.div`
-  display: none;
   @media (max-width: 768px){
-    display: flex;
+    padding: 64px 16px;
+    align-items: flex-start;
     flex-direction: column;
-    padding-top: 64px;
   }
 `;
 
@@ -52,23 +48,8 @@ const TitleContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  margin-right: 256px;
-  padding-left: 128px;
-  @media (max-width: 1920px){
-    padding-left: 128px;
-    margin-right: 128px;
-  }
-  @media (max-width: 1280px){
-    padding-left: 64px;
-    margin-right: 64px;
-  }
-  @media (max-width: 768px){
-    padding-left: 16px;
-    margin-right: 16px;
-  }
   @media (max-width: 440px){
     justify-content: flex-start;
-    margin-bottom: 32px;
   }
 `;
 
@@ -77,9 +58,6 @@ const Title = styled.h1`
   font-size: 48px;
   color: #101010;
   margin: 0 0 32px 0;
-  @media (max-width: 1920px){
-    max-width: 560px;
-  }
   @media (max-width: 1600px){
     font-size: 36px;
   }
@@ -88,8 +66,9 @@ const Title = styled.h1`
     margin: 0 0 16px 0;
   }
   @media (max-width: 440px){
-    margin: 0 0 16px 0;
+    max-width: 320px;
     line-height: 1.25em;
+    margin: 0 0 16px 0;
     letter-spacing: -1.5px;
   }
 `;
@@ -99,9 +78,9 @@ const FeatureText = styled.p`
   font-size: 20px;
   color: rgba(17,17,17,0.85);
   margin: 0 0 32px 0;
-  max-width: 520px;
+  max-width: 400px;
   @media (max-width: 1080px){
-    max-width: 440px;
+    max-width: 320px;
     font-size: 16px;
     margin: 0 0 16px 0;
   }
@@ -109,25 +88,32 @@ const FeatureText = styled.p`
 
 const FeaturesGraphicImg = styled.img`
   height: auto;
-  width: 700px;
+  width: 640px;
+  margin: 0 192px 0 0;
   @media (max-width: 1600px){
     height: auto;
-    width: 640px;
+    width: 480px;
   }
   @media (max-width: 1280px){
-    width: 480px;
+    margin: 0 80px 0 0;
+  }
+  @media (max-width: 1080px){
+    height: auto;
+    width: 400px;
+    margin: 0 64px 0 0;
   }
   @media (max-width: 900px){
     height: auto;
-    width: 400px;
+    width: 320px;
   }
   @media (max-width: 768px){
+    margin: 0;
     width: 75%;
     height: auto;
-    margin-bottom: 64px;
+    padding: 32px 0 0 0;
   }
   @media (max-width: 440px){
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -139,40 +125,26 @@ const FeatureMobileDiv = styled.div`
   }
 `;
 
-function CustomWorkout() {
+function Cardio() {
 
   return (
     <Wrapper>
       <Content>
         <Slide left>
-          <FeatureMobileDiv>
-            <FeaturesGraphicImg src={CustomWorkoutImg} />
-          </FeatureMobileDiv>
+          <TitleContainer>
+            <Title>Built in cardio tracking</Title>
+            <FeatureText>Track your cardio and keep track of your progress.</FeatureText>
+            <FeatureText>Whether you're biking or going for a jog.</FeatureText>
+          </TitleContainer>
         </Slide>
         <Slide right>
-          <TitleContainer>
-            <Title>Create your own workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share your own personalized workout routine with your friends.</FeatureText>
-          </TitleContainer>
+          <FeatureMobileDiv>
+            <FeaturesGraphicImg src={CardioImg} />
+          </FeatureMobileDiv>
         </Slide>
       </Content>
-      <ContentMobile>
-        <Slide right>
-          <TitleContainer>
-            <Title>Create your own workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share your own personalized workout routine with your friends.</FeatureText>
-          </TitleContainer>
-        </Slide>
-        <Slide left>
-          <FeatureMobileDiv>
-            <FeaturesGraphicImg src={CustomWorkoutImg} />
-          </FeatureMobileDiv>
-        </Slide>
-      </ContentMobile>
     </Wrapper>
   );
 }
 
-export default CustomWorkout;
+export default Cardio;
