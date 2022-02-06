@@ -1,28 +1,31 @@
 {
   "files": {
     "main.css": "/static/css/main.97d5bb25.css",
-    "main.js": "/static/js/main.65c8b42b.js",
+    "main.js": "/static/js/main.07730807.js",
     "static/js/787.ad86e8cd.chunk.js": "/static/js/787.ad86e8cd.chunk.js",
     "static/media/fuchsia-gradient.jpg": "/static/media/fuchsia-gradient.da60a72de55437148f50.jpg",
     "static/media/phone-bg-small.png": "/static/media/phone-bg-small.88adc7c48f7171890360.png",
     "static/media/phone-bg-mobile.png": "/static/media/phone-bg-mobile.f9e26a2932577921ba45.png",
-    "static/media/phone-bg.png": "/static/media/phone-bg.68a283cfec3c2dd4b5b9.png",
+    "static/media/phone-bg.png": "/static/media/phone-bg.bcc5208795a8827d62b9.png",
     "static/media/phones-graphic.png": "/static/media/phones-graphic.d64b323dc8334aa79d71.png",
     "static/media/desktop-spreadsheet.png": "/static/media/desktop-spreadsheet.98eba288ea7b58167151.png",
-    "static/media/workouts-graphic.png": "/static/media/workouts-graphic.e9a555d412a5f93540a0.png",
+    "static/media/graph-graphic.png": "/static/media/graph-graphic.3a076954a82da5076443.png",
+    "static/media/workouts-graphic.png": "/static/media/workouts-graphic.3dff5b812db6dc7e6e89.png",
+    "static/media/calories-graphic.png": "/static/media/calories-graphic.39de2f46aee3e7bc3ca4.png",
     "static/media/custom-workouts-screen.png": "/static/media/custom-workouts-screen.bcd770ccc6f7c09a8de4.png",
     "static/media/cardio-graphic.png": "/static/media/cardio-graphic.bb14492c45092a88f816.png",
-    "static/media/features-graphic.png": "/static/media/features-graphic.c72549cf95dce5041cf8.png",
+    "static/media/features-graphic.png": "/static/media/features-graphic.1b6391fe5d6849f1a14e.png",
+    "static/media/title-logo.svg": "/static/media/title-logo.4c1454f7505371658ce5dd4d5baa19b3.svg",
     "static/media/Jost-Medium.ttf": "/static/media/Jost-Medium.4871b84798625e3f7db7.ttf",
     "static/media/Jost-Bold.ttf": "/static/media/Jost-Bold.c8125384f188025357b1.ttf",
     "static/media/Jost-Regular.ttf": "/static/media/Jost-Regular.90325a9c9305cfd88e1e.ttf",
     "index.html": "/index.html",
     "main.97d5bb25.css.map": "/static/css/main.97d5bb25.css.map",
-    "main.65c8b42b.js.map": "/static/js/main.65c8b42b.js.map",
+    "main.07730807.js.map": "/static/js/main.07730807.js.map",
     "787.ad86e8cd.chunk.js.map": "/static/js/787.ad86e8cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97d5bb25.css",
-    "static/js/main.65c8b42b.js"
+    "static/js/main.07730807.js"
   ]
 }
