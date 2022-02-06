@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomWorkoutImg from '../assets/img/custom-workouts-screen.png';
+import CaloriesImg from '../assets/img/calories-graphic.png';
 import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
@@ -25,21 +25,21 @@ const Content = styled.div`
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 320px;
+  padding: 0 320px 0 0;
   @media (max-width: 1920px){
-    padding: 0 0 0 256px;
+    padding: 0 256px 0 0;
   }
   @media (max-width: 1660px){
-    padding: 0 0 0 128px;
+    padding: 0 128px 0 0;
   }
   @media (max-width: 1360px){
-    padding: 0 0 0 64px;
+    padding: 0 64px 0 0;
   }
   @media (max-width: 1080px){
-    padding: 0 0 0 32px;
+    padding: 0 32px 0 0;
   }
   @media (max-width: 900px){
-    padding: 0 0 0 16px;
+    padding: 0 16px 0 0;
   }
   @media (max-width: 660px) {
     display: none;
@@ -61,29 +61,24 @@ const TitleContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  margin-right: 320px;
-  max-width: 480px;
+  padding-left: 320px;
   @media (max-width: 1920px){
-    margin-right: 256px;
+    padding: 0 0 0 256px;
   }
   @media (max-width: 1660px){
-    margin-right: 128px;
+    padding: 0 0 0 128px;
   }
   @media (max-width: 1360px){
-    margin-right: 64px;
+    padding: 0 0 0 64px;
   }
   @media (max-width: 1080px){
-    margin-right: 32px;
+    padding: 0 0 0 32px;
   }
   @media (max-width: 900px){
-    margin-right: 16px;
-  }
-  @media (max-width: 0px){
-    padding-left: 16px;
-    margin-right: 16px;
+    padding: 0 0 0 16px;
   }
   @media (max-width: 660px){
-    justify-content: flex-start;
+    padding: 0;
   }
 `;
 
@@ -113,7 +108,7 @@ const FeatureText = styled.p`
   font-size: 20px;
   color: rgba(17,17,17,0.85);
   margin: 0 0 32px 0;
-  max-width: 520px;
+  max-width: 440px;
   @media (max-width: 1360px){
     max-width: 400px;
     font-size: 16px;
@@ -128,11 +123,9 @@ const FeaturesGraphicImg = styled.img`
   height: auto;
   width: 600px;
   @media (max-width: 1360px){
-    height: auto;
     width: 500px;
   }
   @media (max-width: 1080px){
-    height: auto;
     width: 400px;
   }
   @media (max-width: 900px){
@@ -140,13 +133,14 @@ const FeaturesGraphicImg = styled.img`
     width: 300px;
   }
   @media (max-width: 0px){
+    margin: 0;
     width: 75%;
     height: auto;
-    margin-bottom: 64px;
+    padding: 32px 0 0 0;
   }
   @media (max-width: 660px){
+    width: 90%;
     margin-top: 16px;
-    width: 100%;
   }
 `;
 
@@ -158,35 +152,33 @@ const FeatureMobileDiv = styled.div`
   }
 `;
 
-function CustomWorkout() {
+function Calories() {
 
   return (
     <Wrapper>
       <Content>
         <Slide left>
-          <FeatureMobileDiv>
-            <FeaturesGraphicImg src={CustomWorkoutImg} />
-          </FeatureMobileDiv>
+          <TitleContainer>
+            <Title>Count your calories</Title>
+            <FeatureText>Log your food for the day while keeping track of your calorie consumption.</FeatureText>
+          </TitleContainer>
         </Slide>
         <Slide right>
-          <TitleContainer>
-            <Title>Create your own <br />workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
-          </TitleContainer>
+          <FeatureMobileDiv>
+            <FeaturesGraphicImg src={CaloriesImg} />
+          </FeatureMobileDiv>
         </Slide>
       </Content>
       <ContentMobile>
-        <Slide right>
+       <Slide left>
           <TitleContainer>
-            <Title>Create your own workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
+            <Title>Count your calories</Title>
+            <FeatureText>Log your food for the day while keeping track of your calorie consumption.</FeatureText>
           </TitleContainer>
         </Slide>
-        <Slide left>
+        <Slide right>
           <FeatureMobileDiv>
-            <FeaturesGraphicImg src={CustomWorkoutImg} />
+            <FeaturesGraphicImg src={CaloriesImg} />
           </FeatureMobileDiv>
         </Slide>
       </ContentMobile>
@@ -194,4 +186,4 @@ function CustomWorkout() {
   );
 }
 
-export default CustomWorkout;
+export default Calories;

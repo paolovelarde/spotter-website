@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SpotterLogo from '../assets/img/spotter-logo.png';
+import { ReactComponent as SpotterSVG } from '../assets/img/title-logo.svg';
 import PhoneBackground from '../assets/img/phone-bg.png';
 import PhoneBackgroundMobile from '../assets/img/phone-bg-mobile.png';
 import PhoneBackgroundSmall from '../assets/img/phone-bg-small.png';
@@ -17,31 +18,26 @@ const FadeWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  height: 900px;
+  height: 829px;
   width: 100%;
   max-width: 1920px;
   background-image: url(${PhoneBackground});
-  background-position: left;
-  background-size: 1920px auto;
-  @media (max-width: 1600px){
-    background-size: cover;
-    height: 720px;
-  }
-  @media (max-width: 1280px){
-    height: 640px;
-  }
+  background-position: center center;
+  background-size: 2156px auto;
   @media (max-width: 1080px){
-    background-position: 75% 100%;
-    background-size: 150%;
+    background-position: 75% 50%;
+    background-size: 1600px auto;
     background-image: url(${PhoneBackgroundSmall});
+    background-repeat: no-repeat;
   }
-  @media (max-width: 768px){
-    background-position: 15% 100%;
+  @media (max-width: 900px){
+    background-position: bottom;
     background-size: 900px auto;
     background-image: url(${PhoneBackgroundMobile});
     justify-content: none;
+    height: 640px;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     background-position: 40%;
     background-size: cover;
     background-image: url(${PhoneBackgroundMobile});
@@ -54,20 +50,22 @@ const LogoDiv = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 24px;
+  height: 36px;
   width: auto;
   padding: 80px 0 0 0;
   margin: 0;
   position: absolute;
-  @media (max-width: 1600px){
-    height: 20px;
+  @media (max-width: 1360px){
+    height: 30px;
   }
-  @media (max-width: 768px){
-    height: 20px;
+  @media (max-width: 900px){
     width: auto;
     position: static;
-    padding: 0;
-    margin-bottom: 108px;
+    padding: 0 0 32px 0;
+  }
+  @media (max-width: 660px){
+    height: 24px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -75,15 +73,21 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 0 0 192px;
-  @media (max-width: 1280px){
+  padding: 0 0 0 320px;
+  @media (max-width: 1920px){
+    padding: 0 0 0 256px;
+  }
+  @media (max-width: 1660px){
     padding: 0 0 0 128px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1360px){
     padding: 0 0 0 64px;
   }
-  @media (max-width: 768px){
-    padding: 64px 16px;
+  @media (max-width: 1080px){
+    padding: 0 0 0 32px;
+  }
+  @media (max-width: 900px){
+    padding: 32px 16px;
   }
 `;
 
@@ -93,7 +97,7 @@ const TitleContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     justify-content: flex-start;
   }
 `;
@@ -104,18 +108,16 @@ const Title = styled.h1`
   color: #101010;
   margin: 0 0 48px 0;
   line-height: 1.25em;
-  @media (max-width: 1600px){
+  @media (max-width: 1360px){
     font-size: 60px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 900px){
     font-size: 48px;
     line-height: 1em;
-    margin: 0 0 32px 0;
-  }
-  @media (max-width: 440px){
-    font-size: 42px;
-    line-height: 1em;
     letter-spacing: -1.5px;
+  }
+  @media (max-width: 660px){
+    font-size: 40px;
   }
 `;
 
@@ -126,9 +128,9 @@ const Subtitle = styled.p`
   margin: 0;
   width: 120px;
   text-align: center;
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     font-size: 16px;
-    width: 96px;
+    width: 128px;
   }
 `;
 
@@ -141,7 +143,13 @@ const DownloadButton = styled.div`
   border-radius: 8px;
   cursor: pointer;
   letter-spacing: 1px;
-  @media (max-width: 1080px){
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @media (max-width: 0px){
     font-size: 16px;
   }
 `;
@@ -155,6 +163,7 @@ function Home() {
             <LogoDiv>
               <Fade>
                 <Logo src={SpotterLogo} />
+                {/* <SpotterSVG style={{ 'width': 'auto', 'height': '24px', 'margin': '0', 'padding': '80px 0 0 0' }} /> */}
               </Fade>
             </LogoDiv>
             <TitleContainer>

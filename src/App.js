@@ -6,6 +6,9 @@ import Transformation from './components/Transformation';
 import Workouts from './components/Workouts';
 import CustomWorkout from './components/CustomWorkout';
 import Cardio from './components/Cardio';
+import Calories from './components/Calories';
+import Graphs from './components/Graphs';
+import Footer from './components/Footer';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -20,11 +23,14 @@ function App() {
     <Wrapper>
       <Home />
       <Features />
-      <WhySpotter />
-      <Transformation />
       <Workouts />
       <CustomWorkout />
+      <Calories />
       <Cardio />
+      <Graphs />
+      <WhySpotter />
+      <Transformation />
+      <Footer />
     </Wrapper>
   );
 }

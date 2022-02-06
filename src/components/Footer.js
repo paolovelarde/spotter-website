@@ -8,50 +8,60 @@ const styles = {
   parallax: {
     'width': '100%',
     'max-width': '1920px',
-    'background-color': '#3cc6f8'
+    'background-color': '#101010'
   },
 }
 
 const Content = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 480px;
-  @media (max-width: 1360px){
-    height: 360px;
-  }
+  height: 360px;
   @media (max-width: 900px){
     height: 180px;
   }
 `;
 
 const Title = styled.p`
-  font-family: JostMedium;
-  font-size: 72px;
+  font-family: JostRegular;
+  font-size: 60px;
   color: #fff;
-  line-height: 1.25em;
+  line-height: 1.5em;
   margin: 0;
   letter-spacing: 2.5px;
-  @media (max-width: 1360px){
-    font-size: 60px;
-  }
+  text-align: center;
   @media (max-width: 900px){
-    font-size: 48px;
-    line-height: 1em;
+    font-size: 36px;
     letter-spacing: -0.25px;
   }
 `;
 
-function WhySpotter() {
+const Subtitle = styled.p`
+  font-family: JostRegular;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.5em;
+  margin: 0;
+  letter-spacing: 2.5px;
+  text-align: center;
+  @media (max-width: 900px){
+    letter-spacing: -0.25px;
+    font-size: 18px;
+  }
+`;
+
+function Footer() {
   return (
     <Parallax strength={200} style={styles.parallax}>
       <Content>
         <Fade>
-          <Title>Why Spotter?</Title>
+          <Subtitle>Coming</Subtitle>
+          <Title>Summer 2022</Title>
         </Fade>
       </Content>
     </Parallax>
   );
 }
 
-export default WhySpotter;
+export default Footer;

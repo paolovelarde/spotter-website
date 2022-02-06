@@ -12,10 +12,6 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1920px;
   background-color: #fff;
-  @media (max-width: 1080px){
-    flex-direction: column;
-    height: auto;
-  }
 `;
 
 const Content = styled.div`
@@ -30,7 +26,7 @@ const Content = styled.div`
     align-items: center;
     margin: 80px 0;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     margin: 64px 0;
   }
 `;
@@ -41,10 +37,10 @@ const Subtitle = styled.p`
   color: rgba(17,17,17,1);
   margin: 0;
   text-align: center;
-  @media (max-width: 1280px){
+  @media (max-width: 16px){
     font-size: 16px;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     font-size: 16px;
     margin: 0 32px;
   }
@@ -55,14 +51,14 @@ const SpreadsheetContainer = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
-  @media (max-width: 1280px){
+  @media (max-width: 1360px){
     margin-left: 64px;
   }
   @media (max-width: 1080px){
     margin-bottom: 80px;
     margin-left: 0;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     margin: 0;
   }
 `;
@@ -72,7 +68,7 @@ const PhonesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     margin: 64px 0 0 0;
   }
 `;
@@ -81,7 +77,7 @@ const DesktopSpreadsheetImg = styled.img`
   width: 600px;
   height: auto;
   margin: 63.75px 0 64px 0;
-  @media (max-width: 1600px){
+  @media (max-width: 1360px){
     width: 450px;
     height: auto;
     margin: 80px 0 32px 0;
@@ -91,10 +87,10 @@ const DesktopSpreadsheetImg = styled.img`
     height: auto;
     margin: 0 0 32px 0;
   }
-  @media (max-width: 768px){
+  @media (max-width: 900px){
     width: 360px;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     width: 300px;
     height: auto;
     margin: 0 0 32px 0;
@@ -105,14 +101,14 @@ const PhonesGraphicImg = styled.img`
   width: 480px;
   height: auto;
   margin: 63.75px 0 64px 0;
-  @media (max-width: 1600px){
+  @media (max-width: 1360px){
     width: 360px;
     margin: 0 0 32px 0;
   }
-  @media (max-width: 768px){
+  @media (max-width: 1080px){
     width: 360px;
   }
-  @media (max-width: 440px){
+  @media (max-width: 660px){
     width: 300px;
     height: auto;
     margin: 0 0 32px 0;
