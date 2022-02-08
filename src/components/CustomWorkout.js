@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CustomWorkoutImg from '../assets/img/custom-workouts-screen.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -168,22 +169,22 @@ function CustomWorkout() {
             <FeaturesGraphicImg src={CustomWorkoutImg} />
           </FeatureMobileDiv>
         </Slide>
-        <Slide right>
+        <Fade>
           <TitleContainer>
             <Title>Create your own <br />workout routine</Title>
             <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
             <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
       </Content>
       <ContentMobile>
-        <Slide right>
+        <Fade>
           <TitleContainer>
             <Title>Create your own workout routine</Title>
             <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
             <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide left>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={CustomWorkoutImg} />

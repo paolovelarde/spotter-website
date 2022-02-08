@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import CheckPointImg from '../assets/img/check-point.png';
 import WorkoutsImg from '../assets/img/workouts-graphic.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -100,7 +101,7 @@ const FeatureText = styled.p`
 
 const FeaturesGraphicImg = styled.img`
   height: auto;
-  width: 600px;
+  width: 540px;
   margin: 0 320px 0 0;
   @media (max-width: 1920px){
     margin: 0 256px 0 0;
@@ -122,7 +123,7 @@ const FeaturesGraphicImg = styled.img`
   }
   @media (max-width: 660px){
     margin: 16px 0 0 0;
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -139,13 +140,13 @@ function Workouts() {
   return (
     <Wrapper>
       <Content>
-        <Slide left>
+        <Fade>
           <TitleContainer>
             <Title>Free workout routines</Title>
             <FeatureText>Create your own workout routine or select one from our catalogue.</FeatureText>
             <FeatureText>For powerlifters, yoga enthusiasts, and more.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={WorkoutsImg} />

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GraphImg from '../assets/img/graph-graphic.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -163,12 +164,12 @@ function Graphics() {
   return (
     <Wrapper>
       <Content>
-        <Slide left>
+        <Fade>
           <TitleContainer>
             <Title>Progress is key</Title>
             <FeatureText>Spotter provides convenient tools that allow you to easily keep track of your progress.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={GraphImg} />
@@ -176,12 +177,12 @@ function Graphics() {
         </Slide>
       </Content>
       <ContentMobile>
-       <Slide left>
+       <Fade>
           <TitleContainer>
             <Title>Progress is key</Title>
             <FeatureText>Spotter provides convenient tools that allow you to easily keep track of your progress.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={GraphImg} />

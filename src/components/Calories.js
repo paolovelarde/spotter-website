@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CaloriesImg from '../assets/img/calories-graphic.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -157,12 +158,12 @@ function Calories() {
   return (
     <Wrapper>
       <Content>
-        <Slide left>
+        <Fade>
           <TitleContainer>
             <Title>Count your calories</Title>
             <FeatureText>Log your food for the day while keeping track of your calorie consumption.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={CaloriesImg} />
@@ -170,12 +171,12 @@ function Calories() {
         </Slide>
       </Content>
       <ContentMobile>
-       <Slide left>
+       <Fade>
           <TitleContainer>
             <Title>Count your calories</Title>
             <FeatureText>Log your food for the day while keeping track of your calorie consumption.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={CaloriesImg} />

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CardioImg from '../assets/img/cardio-graphic.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -156,12 +157,12 @@ function Cardio() {
             <FeaturesGraphicImg src={CardioImg} />
           </FeatureMobileDiv>
         </Slide>
-        <Slide right>
+        <Fade>
           <TitleContainer>
             <Title>Built in cardio tracking</Title>
             <FeatureText>Whether you're going for a bike ride or a morning jog, you can start your cardio session with the tap of a button.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
       </Content>
     </Wrapper>
   );

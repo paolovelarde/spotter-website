@@ -167,13 +167,15 @@ function Home() {
               </Fade>
             </LogoDiv>
             <TitleContainer>
-              <Slide left>
+              <Fade>
                 <Title>Fitness <br />made simple</Title>
-                <DownloadButton data-tip data-for='download' data-place='bottom' data-type='light'>Download</DownloadButton>
-                <ReactTooltip id='download' type='warning' effect='solid'>
-                  <Subtitle>Coming soon!</Subtitle>
-                </ReactTooltip>
-              </Slide>
+                <Slide left>
+                  <DownloadButton data-tip data-for='download' data-place='bottom' data-type='light'>Download</DownloadButton>
+                  <ReactTooltip id='download' type='warning' effect='solid'>
+                    <Subtitle>Coming soon!</Subtitle>
+                  </ReactTooltip>
+                </Slide>
+              </Fade>
             </TitleContainer>
           </Content>
         </Wrapper>

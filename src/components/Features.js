@@ -7,6 +7,7 @@ import CheckPointViolet from '../assets/img/check-point-violet.png';
 import CheckPointDark from '../assets/img/check-point-dark.png';
 import FeaturesImg from '../assets/img/features-graphic.png';
 import Slide from 'react-reveal/Slide';
+import { Fade } from 'react-reveal';
 
 const Wrapper = styled.div`
   display: flex;
@@ -173,20 +174,20 @@ function Features() {
             <FeaturesGraphicImg src={FeaturesImg} />
           </FeatureMobileDiv>
         </Slide>
-        <Slide right>
+        <Fade>
           <TitleContainer>
             <Title>An all-in-one fitness app</Title>
             <FeatureText>Spotter helps you keep track of your fitness lifestyle with ease, all under one package.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
       </Content>
       <MobileContent>
-        <Slide left>
+        <Fade>
           <TitleContainer>
             <Title>An all-in-one fitness app</Title>
             <FeatureText>Spotter helps you keep track of your fitness lifestyle with ease, all under one package.</FeatureText>
           </TitleContainer>
-        </Slide>
+        </Fade>
         <Slide right>
           <FeatureMobileDiv>
             <FeaturesGraphicImg src={FeaturesImg} />

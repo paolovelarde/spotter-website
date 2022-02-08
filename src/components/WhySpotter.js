@@ -16,9 +16,9 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 480px;
+  height: 360px;
   @media (max-width: 1360px){
-    height: 360px;
+    height: 240px;
   }
   @media (max-width: 900px){
     height: 180px;
