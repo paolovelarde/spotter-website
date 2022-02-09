@@ -28,7 +28,7 @@ function App() {
       <Calories />
       <Cardio />
       <Graphs />
-      <WhySpotter />
+      {/* <WhySpotter /> */}
       <Transformation />
       <Footer />
     </Wrapper>
