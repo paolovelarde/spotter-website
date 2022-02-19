@@ -20,14 +20,14 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  margin: 128px 0;
+  margin-bottom: 128px;
   @media (max-width: 1080px){
     flex-direction: column;
     align-items: center;
-    margin: 80px 0;
+    margin-bottom: 80px;
   }
   @media (max-width: 660px){
-    margin: 64px 0;
+    margin-bottom: 64px;
   }
 `;
 
