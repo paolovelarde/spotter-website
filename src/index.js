@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import '../src/fonts/Jost-Regular.ttf';
 import '../src/fonts/Jost-Bold.ttf';
 import '../src/fonts/Jost-Medium.ttf';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'G-K3ERQKFGTH';
+ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.render(
   <React.StrictMode>
