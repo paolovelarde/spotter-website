@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import FuchsiaGradient from '../assets/img/fuchsia-gradient.jpg';
-import { Parallax } from 'react-parallax';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import styled from "styled-components";
+import FuchsiaGradient from "../assets/img/fuchsia-gradient.jpg";
+import { Parallax } from "react-parallax";
+import Fade from "react-reveal/Fade";
 
 const styles = {
   parallax: {
-    'width': '100%',
-    'max-width': '1920px',
-    'background-color': '#101010'
+    width: "100%",
+    "max-width": "1920px",
+    "background-color": "#101010",
   },
-}
+};
 
 const Content = styled.div`
   display: flex;
@@ -18,16 +18,16 @@ const Content = styled.div`
   justify-content: center;
   height: 120px;
   padding: 0 0 0 256px;
-  @media (max-width: 1660px){
+  @media (max-width: 1660px) {
     padding: 0 0 0 128px;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     padding: 0 0 0 64px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     padding: 0 0 0 32px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     padding: 32px 16px;
     height: 32px;
   }
@@ -35,12 +35,12 @@ const Content = styled.div`
 
 const Title = styled.p`
   font-family: JostRegular;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   line-height: 1.5em;
   margin: 0;
-  letter-spacing: 1.5px;
-  @media (max-width: 900px){
+  letter-spacing: 1px;
+  @media (max-width: 900px) {
     font-size: 18px;
     letter-spacing: -0.25px;
   }
@@ -54,7 +54,7 @@ const Subtitle = styled.p`
   margin: 0;
   letter-spacing: 2.5px;
   text-align: center;
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     letter-spacing: -0.25px;
     font-size: 18px;
   }

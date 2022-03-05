@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import CustomWorkoutImg from '../assets/img/custom-workouts-screen.png';
-import Slide from 'react-reveal/Slide';
-import { Fade } from 'react-reveal';
+import React from "react";
+import styled from "styled-components";
+import CustomWorkoutImg from "../assets/img/custom-workouts-screen.png";
+import Slide from "react-reveal/Slide";
+import { Fade } from "react-reveal";
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,10 +13,10 @@ const Wrapper = styled.div`
   background-color: #fff;
   overflow: hidden;
   padding: 128px 0 0 0;
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     padding: 80px 0 0 0;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     justify-content: none;
   }
 `;
@@ -27,19 +27,19 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 320px;
-  @media (max-width: 1920px){
+  @media (max-width: 1920px) {
     padding: 0 0 0 256px;
   }
-  @media (max-width: 1660px){
+  @media (max-width: 1660px) {
     padding: 0 0 0 128px;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     padding: 0 0 0 64px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     padding: 0 0 0 32px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     padding: 0 0 0 16px;
   }
   @media (max-width: 660px) {
@@ -49,7 +49,7 @@ const Content = styled.div`
 
 const ContentMobile = styled.div`
   display: none;
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
@@ -64,26 +64,26 @@ const TitleContainer = styled.div`
   flex: 1;
   margin-right: 320px;
   max-width: 480px;
-  @media (max-width: 1920px){
+  @media (max-width: 1920px) {
     margin-right: 256px;
   }
-  @media (max-width: 1660px){
+  @media (max-width: 1660px) {
     margin-right: 128px;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     margin-right: 64px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     margin-right: 32px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     margin-right: 16px;
   }
-  @media (max-width: 0px){
+  @media (max-width: 0px) {
     padding-left: 16px;
     margin-right: 16px;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     justify-content: flex-start;
   }
 `;
@@ -93,16 +93,16 @@ const Title = styled.p`
   font-size: 48px;
   color: #101010;
   margin: 0 0 32px 0;
-  @media (max-width: 1920px){
+  @media (max-width: 1920px) {
     max-width: 560px;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     font-size: 36px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     font-size: 30px;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     margin: 0 0 16px 0;
     line-height: 1.25em;
     letter-spacing: -1.5px;
@@ -112,15 +112,15 @@ const Title = styled.p`
 const FeatureText = styled.p`
   font-family: JostRegular;
   font-size: 20px;
-  color: rgba(17,17,17,0.85);
+  color: rgba(17, 17, 17, 0.85);
   margin: 0 0 32px 0;
   max-width: 520px;
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     max-width: 400px;
     font-size: 16px;
     margin: 0 0 16px 0;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     max-width: 300px;
   }
 `;
@@ -128,31 +128,31 @@ const FeatureText = styled.p`
 const FeaturesGraphicImg = styled.img`
   height: auto;
   width: 600px;
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     height: auto;
     width: 500px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     height: auto;
     width: 400px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     height: auto;
     width: 300px;
   }
-  @media (max-width: 0px){
+  @media (max-width: 0px) {
     width: 75%;
     height: auto;
     margin-bottom: 64px;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     margin-top: 16px;
     width: 100%;
   }
 `;
 
 const FeatureMobileDiv = styled.div`
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -160,7 +160,6 @@ const FeatureMobileDiv = styled.div`
 `;
 
 function CustomWorkout() {
-
   return (
     <Wrapper>
       <Content>
@@ -171,9 +170,17 @@ function CustomWorkout() {
         </Slide>
         <Fade>
           <TitleContainer>
-            <Title>Create your own <br />workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
+            <Title>
+              Create your own <br />
+              workout routine
+            </Title>
+            <FeatureText>
+              Spotter allows you to create your own workout routine with tools
+              that allow for a simple experience.
+            </FeatureText>
+            <FeatureText>
+              Share a personalized workout routine with your friends.
+            </FeatureText>
           </TitleContainer>
         </Fade>
       </Content>
@@ -181,8 +188,13 @@ function CustomWorkout() {
         <Fade>
           <TitleContainer>
             <Title>Create your own workout routine</Title>
-            <FeatureText>Spotter allows you to create your own workout routine with tools that allow for a simple experience.</FeatureText>
-            <FeatureText>Share a personalized workout routine with your friends.</FeatureText>
+            <FeatureText>
+              Spotter allows you to create your own workout routine with tools
+              that allow for a simple experience.
+            </FeatureText>
+            <FeatureText>
+              Share your personalized workout routine with friends.
+            </FeatureText>
           </TitleContainer>
         </Fade>
         <Slide left>

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import GraphImg from '../assets/img/graph-graphic.png';
-import Slide from 'react-reveal/Slide';
-import { Fade } from 'react-reveal';
+import React from "react";
+import styled from "styled-components";
+import GraphImg from "../assets/img/graph-graphic.png";
+import Slide from "react-reveal/Slide";
+import { Fade } from "react-reveal";
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,13 +13,13 @@ const Wrapper = styled.div`
   background-color: #fff;
   overflow: hidden;
   padding: 128px 0;
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     padding: 80px 0;
   }
-  @media (max-width: 0px){
+  @media (max-width: 0px) {
     padding: 0 0;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     justify-content: none;
   }
 `;
@@ -30,19 +30,19 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 320px 0 0;
-  @media (max-width: 1920px){
+  @media (max-width: 1920px) {
     padding: 0 256px 0 0;
   }
-  @media (max-width: 1660px){
+  @media (max-width: 1660px) {
     padding: 0 128px 0 0;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     padding: 0 64px 0 0;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     padding: 0 32px 0 0;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     padding: 0 16px 0 0;
   }
   @media (max-width: 660px) {
@@ -52,7 +52,7 @@ const Content = styled.div`
 
 const ContentMobile = styled.div`
   display: none;
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     display: flex;
     flex-direction: column;
   }
@@ -65,26 +65,26 @@ const TitleContainer = styled.div`
   align-items: flex-start;
   flex: 1;
   padding-left: 320px;
-  @media (max-width: 1920px){
-    padding-left: 256px
+  @media (max-width: 1920px) {
+    padding-left: 256px;
   }
-  @media (max-width: 1660px){
-    padding-left: 128px
+  @media (max-width: 1660px) {
+    padding-left: 128px;
   }
-  @media (max-width: 1360px){
-    padding-left: 64px
+  @media (max-width: 1360px) {
+    padding-left: 64px;
   }
-  @media (max-width: 1080px){
-    padding-left: 32px
+  @media (max-width: 1080px) {
+    padding-left: 32px;
   }
-  @media (max-width: 900px){
-    padding-left: 16px
+  @media (max-width: 900px) {
+    padding-left: 16px;
   }
-  @media (max-width: 0px){
+  @media (max-width: 0px) {
     padding-left: 16px;
     margin-right: 16px;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     justify-content: flex-start;
     margin-bottom: 16px;
   }
@@ -95,16 +95,16 @@ const Title = styled.p`
   font-size: 48px;
   color: #101010;
   margin: 0 0 32px 0;
-  @media (max-width: 1920px){
+  @media (max-width: 1920px) {
     max-width: 560px;
   }
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     font-size: 36px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     font-size: 30px;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     margin: 0 0 16px 0;
     line-height: 1.25em;
     letter-spacing: -1.5px;
@@ -114,15 +114,15 @@ const Title = styled.p`
 const FeatureText = styled.p`
   font-family: JostRegular;
   font-size: 20px;
-  color: rgba(17,17,17,0.85);
+  color: rgba(17, 17, 17, 0.85);
   margin: 0 0 32px 0;
   max-width: 440px;
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     max-width: 400px;
     font-size: 16px;
     margin: 0 0 16px 0;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     max-width: 300px;
   }
 `;
@@ -130,29 +130,29 @@ const FeatureText = styled.p`
 const FeaturesGraphicImg = styled.img`
   height: auto;
   width: 600px;
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     width: 500px;
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     width: 400px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     height: auto;
     width: 300px;
   }
-  @media (max-width: 0px){
+  @media (max-width: 0px) {
     margin: 0;
     width: 75%;
     height: auto;
     padding: 32px 0 0 0;
   }
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     width: 100%;
   }
 `;
 
 const FeatureMobileDiv = styled.div`
-  @media (max-width: 660px){
+  @media (max-width: 660px) {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -160,14 +160,16 @@ const FeatureMobileDiv = styled.div`
 `;
 
 function Graphics() {
-
   return (
     <Wrapper>
       <Content>
         <Fade>
           <TitleContainer>
-            <Title>Progress is key</Title>
-            <FeatureText>Spotter provides convenient tools that allow you to easily keep track of your progress.</FeatureText>
+            <Title>Progression is key</Title>
+            <FeatureText>
+              Spotter helps you keep track of your progress with simple and
+              accessible data visualization.
+            </FeatureText>
           </TitleContainer>
         </Fade>
         <Slide right>
@@ -177,10 +179,13 @@ function Graphics() {
         </Slide>
       </Content>
       <ContentMobile>
-       <Fade>
+        <Fade>
           <TitleContainer>
-            <Title>Progress is key</Title>
-            <FeatureText>Spotter provides convenient tools that allow you to easily keep track of your progress.</FeatureText>
+            <Title>Progression is key</Title>
+            <FeatureText>
+              Spotter helps you keep track of your progress with simple and
+              accessible data visualization.
+            </FeatureText>
           </TitleContainer>
         </Fade>
         <Slide right>
